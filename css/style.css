@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Labrada", serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background-color: #4cc9f0;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.navbar {
+  height: fit-content;
+  background: linear-gradient(90deg, #4cc9f0, #4361ee);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-align: center;
+  margin: 20px;
+  /* font-weight: bold; */
+}
+
+.navbar a:hover {
+  color: black;
+  background-color: white;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar > .name {
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid white;
+}
+
+.side {
+  flex: 30%;
+  background-color: #4cc9f0;
+  /* color: #f72585; */
+  color: #4361ee;
+  padding: 20px;
+  border-right: 1px solid white;
+}
+.main {
+  flex: 70%;
+  background-color: #4cc9f0;
+  padding: 20px;
+  color: #4361ee;
+}
+
+.fakeimg1 {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  background-color: white;
+}
+
+.myphoto {
+  /* background-image: url(/img/Semi\ Casual\ Photograph\ WB2.png); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border-radius: 100%; */
+}
+
+.fakeimg2 {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+
+/* footer  */
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #4cc9f0;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid white;
+}
+
+.side_1 {
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+
+hr {
+  border: 1px solid white;
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .navbar a {
+    flex-direction: column;
+    /* max-width: 100%; */
+    flex: 100%;
+  }
+
+  .links {
+    flex-direction: column;
+    /* flex: 100%; */
+    min-width: 100%;
+  }
+}
